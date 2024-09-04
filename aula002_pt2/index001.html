@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>Dados gerais</legend>
+            <label for="nome" title="Nome do usuário cadastrado.">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <label for="datanascimento">Data de nascimento:</label>
+            <input type="date" name="datanascimento" id="datanascimento">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha">
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="cidade">Cidade:</label>
+            <input value="Jacareí" type="text" name="cidade" id="cidade">
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Time</legend>
+            <label for="SaoPaulo">São Paulo</label>
+            <input type="radio" name="Time" id="SaoPaulo" checked>
+
+            <label for="Corinthians">Corinthians</label>
+            <input type="radio" name="Time" id="Corinthians">
+
+            <label for="Palmeiras">Palmeiras</label>
+            <input type="radio" name="Time" id="Palmeiras">
+
+            <label for="Santos">Santos</label>
+            <input type="radio" name="Time" id="Santos">
+        </fieldset>
+
+        <fieldset>
+            <legend>Jogadores favoritos</legend>
+
+            <label for="Luciano">Luciano</label>
+            <input type="checkbox" name="Luciano" id="Luciano" checked>
+
+            <label for="Calleri">Calleri</label>
+            <input type="checkbox" name="Calleri" id="Calleri" checked>
+
+            <label for="Lucas">Lucas</label>
+            <input type="checkbox" name="Lucas" id="Lucas" checked>
+
+            <label for="Garro">Garro</label>
+            <input type="checkbox" name="Garro" id="Garro">
+
+            <label for="Estevao">Estevão</label>
+            <input type="checkbox" name="Estevao" id="Estevao">
+
+            <label for="Otero">Otero</label>
+            <input type="checkbox" name="Otero" id="Otero">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Deixe seu comentário</legend>
+
+            <textarea name="comentario" id="comentario" cols="70" rows="10" maxlength="126" placeholder="Digite sua opinião: " style="resize: none;"></textarea>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
