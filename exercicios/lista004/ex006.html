@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exercício 6</title>
+    <style>
+        html {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            font-family: calibri;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #menu {
+            width: 100vw;
+            border-bottom: 1px solid #aaa;
+            box-sizing: border-box;
+            height: 70px;
+            font-size: 40px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #titulo{
+            display: flex;
+            align-items: center;
+
+        }
+
+        #avatar{
+            display: flex;
+            align-items: center;
+        }
+
+        #avatar img{
+            margin-left: 10px;
+        }
+
+        #corpo {
+            width: 100vw;
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+
+        #rodape {
+            width: 100vw;
+            border-top: 1px solid #aaa;
+            box-sizing: border-box;
+            height: 80px;        
+            bottom: 0; 
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        form {
+            padding: 20px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 500px;
+            color: aliceblue;
+        }
+
+        form fieldset {
+            border-radius: inherit;
+            padding: 20px;
+        }
+
+        form input {
+            width: 100%; 
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        #botoes{
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        #botoes input {
+            background-color: #1E90FF; 
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <div id="titulo">
+            <img src="./imagens/css.png" alt="" width="60" height="60" />
+            <div>CSS3</div>
+        </div>
+        <div id="avatar">
+            <div>Bill Gates</div>
+            <img src="./imagens/avatar.jpg" alt="" width="42" height="42" />
+        </div>
+    </div>
+    <div id="corpo">
+        <form>
+            <fieldset>
+                <legend>Login</legend>
+                <div>
+                    <label>e-mail</label>
+                    <input type="email" name="mail" />
+                </div>
+                <div>
+                    <label>Senha</label>
+                    <input type="password" name="senha" />
+                </div>
+                <div id="botoes">
+                    <input type="submit" value="Enviar" class="botao" />
+                    <input type="reset" value="Limpar" class="botao" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div id="rodape">
+        <img src="./imagens/Fatec.png" alt="" width="87" height="41" />
+        <img src="./imagens/CPS.png" alt="" width="85" height="56" />
+
+        <img src="./imagens/Brasao.png" alt="" width="81" height="54" />
+    </div>
+</body>
+
+</html>
