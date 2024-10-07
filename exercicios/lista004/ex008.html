@@ -3,8 +3,24 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Exercício 6</title>
+    <title>Exercício 8</title>
     <style>
+        html {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            font-family: calibri;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+        }
+
         html {
             display: flex;
             align-items: center;
@@ -51,9 +67,19 @@
             width: 100vw;
             background-color: #444;
             display: flex;
+            flex: 1;
+        }
+
+        #esquerda {
+            background-color: yellow;
+            width: 200px; 
+        }
+
+        #direita {
+            flex-grow: 1; 
+            display: flex;
             justify-content: center;
             align-items: center;
-            flex: 1;
         }
 
         #rodape {
@@ -105,7 +131,6 @@
             width: 20%;
         }
 
-
     </style>
 </head>
 
@@ -121,28 +146,31 @@
         </div>
     </div>
     <div id="corpo">
-        <form>
-            <fieldset>
-                <legend>Login</legend>
-                <div>
-                    <label>e-mail</label>
-                    <input type="email" name="mail" />
-                </div>
-                <div>
-                    <label>Senha</label>
-                    <input type="password" name="senha" />
-                </div>
-                <div id="botoes">
-                    <input type="submit" value="Enviar" class="botao" />
-                    <input type="reset" value="Limpar" class="botao" />
-                </div>
-            </fieldset>
-        </form>
+        <div id="esquerda">
+        </div>
+        <div id="direita">
+            <form>
+                <fieldset>
+                    <legend>Login</legend>
+                    <div>
+                        <label>e-mail</label>
+                        <input type="email" name="mail" />
+                    </div>
+                    <div>
+                        <label>Senha</label>
+                        <input type="password" name="senha" />
+                    </div>
+                    <div id="botoes">
+                        <input type="submit" value="Enviar" class="botao" />
+                        <input type="reset" value="Limpar" class="botao" />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </div>
     <div id="rodape">
         <img src="./imagens/Fatec.png" alt="" width="87" height="41" />
         <img src="./imagens/CPS.png" alt="" width="85" height="56" />
-
         <img src="./imagens/Brasao.png" alt="" width="81" height="54" />
     </div>
 </body>
